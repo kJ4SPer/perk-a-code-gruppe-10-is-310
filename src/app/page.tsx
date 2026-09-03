@@ -6,6 +6,7 @@ import TechMarquee from "@/components/TechMarquee";
 export default function Home() {
   const miniTeam = [
     {
+      id: "kasper",
       name: "Kasper",
       perk: "Juggernog",
       colorName: "Rød",
@@ -18,6 +19,7 @@ export default function Home() {
       image: "/team/kasper.png",
     },
     {
+      id: "hans-kristian",
       name: "Hans Kristian",
       perk: "Quick Revive",
       colorName: "Blå",
@@ -30,6 +32,7 @@ export default function Home() {
       image: "/team/hans-kristian.jpg",
     },
     {
+      id: "kristian",
       name: "Kristian",
       perk: "Speed Cola",
       colorName: "Grønn",
@@ -42,6 +45,7 @@ export default function Home() {
       image: "/team/kristian.png",
     },
     {
+      id: "mats",
       name: "Mats",
       perk: "Double Tap",
       colorName: "Gul/Oransje",
@@ -358,7 +362,7 @@ export default function Home() {
             {miniTeam.map((member) => (
               <Link
                 key={member.name}
-                href="/om-oss"
+                href={`/om-oss#${member.id}`}
                 className={`group relative flex flex-col justify-between overflow-hidden rounded-xl border bg-[#0a101b]/90 p-6 transition-all duration-300 ${member.accentBorder} ${member.hoverShadow} active:scale-[0.98]`}
               >
                 {/* Visual glow indicator */}

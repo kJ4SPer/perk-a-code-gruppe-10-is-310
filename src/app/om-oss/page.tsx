@@ -283,7 +283,7 @@ export default function OmOssPage() {
                   <a
                     key={m.id}
                     href={`#${m.id}`}
-                    className="group flex flex-col items-center gap-2 text-center p-1.5 sm:p-2 rounded-lg hover:bg-white/[0.04] transition-all cursor-pointer focus:outline-none focus:ring-1 focus:ring-[#00f0ff]"
+                    className="group flex flex-col items-center justify-end gap-2 text-center p-1.5 sm:p-2 rounded-lg hover:bg-white/[0.04] transition-all cursor-pointer focus:outline-none focus:ring-1 focus:ring-[#00f0ff]"
                     title={`Gå direkte til ${m.name} (${m.perk})`}
                   >
                     <div className="relative h-24 sm:h-32 w-8 sm:w-12 transition-all duration-300 group-hover:scale-115 group-hover:-translate-y-2">
@@ -297,15 +297,17 @@ export default function OmOssPage() {
                         }}
                       />
                     </div>
-                    <span
-                      className="font-mono text-[10px] sm:text-xs font-bold uppercase tracking-wider group-hover:underline"
-                      style={{ color: m.accentColor }}
-                    >
-                      {m.perk}
-                    </span>
-                    <span className="text-[10px] font-mono text-slate-400 group-hover:text-white transition-colors">
-                      {m.name} &darr;
-                    </span>
+                    <div className="flex flex-col items-center gap-0.5">
+                      <span
+                        className="font-mono text-[9px] sm:text-xs font-bold uppercase tracking-wider group-hover:underline whitespace-nowrap"
+                        style={{ color: m.accentColor }}
+                      >
+                        {m.perk}
+                      </span>
+                      <span className="text-[10px] font-mono text-slate-400 group-hover:text-white transition-colors whitespace-nowrap">
+                        {m.name} &darr;
+                      </span>
+                    </div>
                   </a>
                 ))}
               </div>

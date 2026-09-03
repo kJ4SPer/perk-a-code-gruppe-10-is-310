@@ -338,7 +338,7 @@ export default function TechMarquee() {
   return (
     <div
       ref={containerRef}
-      className="relative w-full overflow-hidden pt-4 pb-14 sm:pb-24"
+      className="relative w-full overflow-hidden py-2"
     >
       {/* Section title without pulsing green dot */}
       <div className="mb-6 px-1 font-mono text-[11px] uppercase tracking-widest text-slate-400">
