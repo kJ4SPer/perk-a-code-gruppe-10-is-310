@@ -31,7 +31,11 @@ export const metadata: Metadata = {
     "Fullstack",
   ],
   icons: {
-    icon: "/logo.png",
+    icon: [
+      { url: "/logo.png", type: "image/png" },
+    ],
+    shortcut: "/logo.png",
+    apple: "/logo.png",
   },
 };
 

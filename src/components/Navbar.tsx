@@ -17,11 +17,11 @@ export default function Navbar() {
 
   return (
     <header className="sticky top-0 z-50 w-full border-b border-[#1a2333] bg-[#070b12]/90 backdrop-blur-md">
-      <div className="mx-auto flex max-w-7xl items-center justify-between px-4 sm:px-6 lg:px-8 h-28 sm:h-32">
-        {/* Brand / Logo */}
+      <div className="mx-auto flex max-w-7xl items-center justify-end md:justify-between px-4 sm:px-6 lg:px-8 h-16 md:h-28 lg:h-32">
+        {/* Brand / Logo (skjult på mobil, synlig fra md) */}
         <Link
           href="/"
-          className="group flex items-center gap-0.5 sm:gap-1 transition-opacity hover:opacity-95"
+          className="hidden md:flex group items-center gap-0.5 sm:gap-1 transition-opacity hover:opacity-95"
         >
           <Image
             src="/logo.png"
@@ -31,7 +31,7 @@ export default function Navbar() {
             className="h-20 sm:h-24 md:h-28 w-auto object-contain transition-all duration-300 drop-shadow-[0_0_15px_rgba(0,240,255,0.35)] group-hover:scale-105 group-hover:drop-shadow-[0_0_26px_rgba(0,255,157,0.75)]"
             priority
           />
-          <div className="hidden sm:flex flex-col justify-center -ml-1 sm:-ml-1.5">
+          <div className="flex flex-col justify-center -ml-1 sm:-ml-1.5">
             <span className="font-mono text-xl sm:text-2xl font-extrabold tracking-wider text-white group-hover:text-[#00f0ff] transition-colors leading-tight">
               PERK-A-CODE
             </span>

@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import CopyButton from "@/components/CopyButton";
+import TechMarquee from "@/components/TechMarquee";
 
 export default function Home() {
   const miniTeam = [
@@ -129,7 +130,10 @@ export default function Home() {
           </div>
         </section>
 
-        {/* 2. PRAKSIS-BOKS */}
+        {/* 2. RULLENDE TEKNOLOGIKARUSELL MED LOGOER */}
+        <TechMarquee />
+
+        {/* 3. PRAKSIS-BOKS */}
         <section className="relative">
           <div className="relative overflow-hidden rounded-xl border-2 border-[#00f0ff]/50 bg-[#09111e]/90 p-6 sm:p-8 backdrop-blur-md shadow-[0_0_35px_rgba(0,240,255,0.12)]">
             <div className="absolute top-0 right-0 transform translate-x-4 -translate-y-4 w-40 h-40 bg-[#00f0ff]/10 rounded-full blur-3xl pointer-events-none"></div>
