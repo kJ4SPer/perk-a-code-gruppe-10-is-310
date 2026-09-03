@@ -277,31 +277,41 @@ export default function OmOssPage() {
             </div>
 
             {/* Showcase med de 4 flaskene */}
-            <div className="grid grid-cols-4 gap-2 sm:gap-6 items-end justify-center p-3 sm:p-5 rounded-xl border border-[#152336] bg-[#060b14]/70">
-              {teamMembers.map((m) => (
-                <div key={m.id} className="group flex flex-col items-center gap-2 text-center">
-                  <div className="relative h-24 sm:h-32 w-8 sm:w-12 transition-all duration-300 group-hover:scale-110 group-hover:-translate-y-1">
-                    <Image
-                      src={m.perkImage}
-                      alt={m.perk}
-                      fill
-                      className="object-contain"
-                      style={{
-                        filter: `drop-shadow(0 0 10px ${m.accentColor}77)`,
-                      }}
-                    />
-                  </div>
-                  <span
-                    className="font-mono text-[10px] sm:text-xs font-bold uppercase tracking-wider"
-                    style={{ color: m.accentColor }}
+            <div className="flex flex-col items-center gap-2.5">
+              <div className="grid grid-cols-4 gap-2 sm:gap-6 items-end justify-center p-3 sm:p-5 rounded-xl border border-[#152336] bg-[#060b14]/70">
+                {teamMembers.map((m) => (
+                  <a
+                    key={m.id}
+                    href={`#${m.id}`}
+                    className="group flex flex-col items-center gap-2 text-center p-1.5 sm:p-2 rounded-lg hover:bg-white/[0.04] transition-all cursor-pointer focus:outline-none focus:ring-1 focus:ring-[#00f0ff]"
+                    title={`Gå direkte til ${m.name} (${m.perk})`}
                   >
-                    {m.perk}
-                  </span>
-                  <span className="text-[10px] font-mono text-slate-400">
-                    {m.name}
-                  </span>
-                </div>
-              ))}
+                    <div className="relative h-24 sm:h-32 w-8 sm:w-12 transition-all duration-300 group-hover:scale-115 group-hover:-translate-y-2">
+                      <Image
+                        src={m.perkImage}
+                        alt={m.perk}
+                        fill
+                        className="object-contain"
+                        style={{
+                          filter: `drop-shadow(0 0 10px ${m.accentColor}77)`,
+                        }}
+                      />
+                    </div>
+                    <span
+                      className="font-mono text-[10px] sm:text-xs font-bold uppercase tracking-wider group-hover:underline"
+                      style={{ color: m.accentColor }}
+                    >
+                      {m.perk}
+                    </span>
+                    <span className="text-[10px] font-mono text-slate-400 group-hover:text-white transition-colors">
+                      {m.name} &darr;
+                    </span>
+                  </a>
+                ))}
+              </div>
+              <span className="font-mono text-[10px] text-slate-500 uppercase tracking-wider">
+                [ Klikk på en perk for å gå til profil ]
+              </span>
             </div>
           </div>
         </div>
@@ -311,7 +321,8 @@ export default function OmOssPage() {
           {teamMembers.map((member) => (
             <div
               key={member.id}
-              className={`relative overflow-hidden rounded-2xl border bg-[#080e18]/95 p-7 sm:p-8 backdrop-blur-sm transition-all duration-300 ${member.colorTheme.border} ${member.colorTheme.hoverBorder} ${member.colorTheme.glow}`}
+              id={member.id}
+              className={`relative scroll-mt-36 overflow-hidden rounded-2xl border bg-[#080e18]/95 p-7 sm:p-8 backdrop-blur-sm transition-all duration-300 ${member.colorTheme.border} ${member.colorTheme.hoverBorder} ${member.colorTheme.glow}`}
             >
               {/* Subtle top gradient themed to perk color */}
               <div

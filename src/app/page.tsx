@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
+import CopyButton from "@/components/CopyButton";
 
 export default function Home() {
   const miniTeam = [
@@ -444,45 +445,51 @@ export default function Home() {
               </p>
 
               <div className="pt-4 flex flex-col sm:flex-row sm:items-center gap-4">
-                <a
-                  href="mailto:kj4sper@gmail.com"
-                  className="flex items-center justify-center gap-3 rounded-lg border border-[#00ff9d]/50 bg-[#00ff9d] px-6 py-3.5 font-mono text-sm font-bold text-[#070b12] hover:bg-[#38ffad] hover:shadow-[0_0_25px_rgba(0,255,157,0.6)] transition-all"
-                >
-                  <svg
-                    className="h-5 w-5"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    stroke="currentColor"
+                <div className="flex items-center gap-2">
+                  <a
+                    href="mailto:kj4sper@gmail.com?subject=Perk-a-Code%20-%20Foresp%C3%B8rsel%20om%20samarbeid%20v%C3%A5ren%202027"
+                    className="flex-1 flex items-center justify-center gap-3 rounded-lg border border-[#00ff9d]/50 bg-[#00ff9d] px-6 py-3.5 font-mono text-sm font-bold text-[#070b12] hover:bg-[#38ffad] hover:shadow-[0_0_25px_rgba(0,255,157,0.6)] transition-all"
                   >
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      strokeWidth={2}
-                      d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
-                    />
-                  </svg>
-                  <span>kj4sper@gmail.com</span>
-                </a>
+                    <svg
+                      className="h-5 w-5"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke="currentColor"
+                    >
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeWidth={2}
+                        d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
+                      />
+                    </svg>
+                    <span>kj4sper@gmail.com</span>
+                  </a>
+                  <CopyButton textToCopy="kj4sper@gmail.com" label="Kopier" />
+                </div>
 
-                <a
-                  href="tel:94185687"
-                  className="flex items-center justify-center gap-3 rounded-lg border border-[#00f0ff]/50 bg-[#0c1829] px-6 py-3.5 font-mono text-sm font-bold text-[#00f0ff] hover:bg-[#11233d] hover:shadow-[0_0_25px_rgba(0,240,255,0.4)] transition-all"
-                >
-                  <svg
-                    className="h-5 w-5"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    stroke="currentColor"
+                <div className="flex items-center gap-2">
+                  <a
+                    href="tel:+4794185687"
+                    className="flex-1 flex items-center justify-center gap-3 rounded-lg border border-[#00f0ff]/50 bg-[#0c1829] px-6 py-3.5 font-mono text-sm font-bold text-[#00f0ff] hover:bg-[#11233d] hover:shadow-[0_0_25px_rgba(0,240,255,0.4)] transition-all"
                   >
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      strokeWidth={2}
-                      d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"
-                    />
-                  </svg>
-                  <span>94 18 56 87</span>
-                </a>
+                    <svg
+                      className="h-5 w-5"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke="currentColor"
+                    >
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeWidth={2}
+                        d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"
+                      />
+                    </svg>
+                    <span>+47 941 85 687</span>
+                  </a>
+                  <CopyButton textToCopy="+4794185687" label="Kopier" />
+                </div>
               </div>
             </div>
           </div>

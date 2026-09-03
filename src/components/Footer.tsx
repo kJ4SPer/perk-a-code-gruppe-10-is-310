@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
+import CopyButton from "@/components/CopyButton";
 
 const SLASH = "//";
 
@@ -72,21 +73,27 @@ export default function Footer() {
             <div className="space-y-2 text-sm">
               <div>
                 <span className="block text-xs font-mono text-slate-500">E-post:</span>
-                <a
-                  href="mailto:kj4sp@gmail.com"
-                  className="font-mono text-slate-300 hover:text-[#00ff9d] transition-colors"
-                >
-                  kj4sp@gmail.com
-                </a>
+                <div className="flex items-center gap-2">
+                  <a
+                    href="mailto:kj4sper@gmail.com?subject=Perk-a-Code%20-%20Foresp%C3%B8rsel%20om%20samarbeid%20v%C3%A5ren%202027"
+                    className="font-mono text-slate-300 hover:text-[#00ff9d] transition-colors"
+                  >
+                    kj4sper@gmail.com
+                  </a>
+                  <CopyButton variant="icon" textToCopy="kj4sper@gmail.com" />
+                </div>
               </div>
               <div>
                 <span className="block text-xs font-mono text-slate-500">Telefon:</span>
-                <a
-                  href="tel:94185687"
-                  className="font-mono text-slate-300 hover:text-[#00ff9d] transition-colors"
-                >
-                  +47 941 85 687
-                </a>
+                <div className="flex items-center gap-2">
+                  <a
+                    href="tel:+4794185687"
+                    className="font-mono text-slate-300 hover:text-[#00ff9d] transition-colors"
+                  >
+                    +47 941 85 687
+                  </a>
+                  <CopyButton variant="icon" textToCopy="+4794185687" />
+                </div>
               </div>
               <div className="pt-2">
                 <span className="inline-flex items-center gap-1.5 rounded border border-[#1a2333] bg-[#090e18] px-2.5 py-1 text-[11px] font-mono text-[#00ff9d]">
