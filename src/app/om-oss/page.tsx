@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 
 /**
@@ -13,6 +14,8 @@ export const teamMembers = [
     name: "Kasper",
     perk: "Juggernog",
     accentColor: "#ff0000",
+    image: "/team/kasper.png",
+    perkImage: "/perks/juggernog.png",
     colorTheme: {
       border: "border-[#ff0000]/40",
       hoverBorder: "hover:border-[#ff0000]",
@@ -23,13 +26,12 @@ export const teamMembers = [
       cardHeaderGlow: "from-red-600/10 via-red-900/5 to-transparent",
     },
     roleDescription:
-      "Den robuste ryggraden. Tåler støyten, håndterer komplekse strukturer og sørger for stabilitet i prosjektet (Røde detaljer).",
-    bio: "Kasper er gruppens klippe og arkitektoniske anker. Når tidsfrister presser på eller datamodellene blir uoversiktlige, tar han ansvar for systemstabilitet, dataintegritet og helhetlig arkitektur.",
+      "Teamleder og den robuste ryggraden. Tåler støyten, koordinerer teamet, håndterer komplekse strukturer og sørger for stabilitet og fremdrift i prosjektet.",
+    bio: "Kasper er bachelorgruppens teamleder, klippe og arkitektoniske anker. Han holder i overordnet koordinering, fremdrift og dialog mot oppdragsgivere, samtidig som han tar ansvar for systemstabilitet, dataintegritet og helhetlig arkitektur.",
     styrker: [
+      "Teamledelse, koordinering og prosjektstyring",
       "Robust systemarkitektur og databasemodellering",
-      "Håndterer stress og komplekse tekniske utfordringer under press",
-      "Strukturert og metodisk tilnærming til prosjektleveranser",
-      "Kvalitetssikrer at fundamentet tåler videre skalering",
+      "Kvalitetssikrer at fundamentet tåler videre skalering og press",
     ],
     svakheter: [
       "Kan bli vel opphengt i mikroskopiske detaljer og perfeksjonisme",
@@ -60,6 +62,8 @@ export const teamMembers = [
     name: "Hans Kristian",
     perk: "Quick Revive",
     accentColor: "#00ffff",
+    image: "/team/hans-kristian.jpg",
+    perkImage: "/perks/quick-revive.png",
     colorTheme: {
       border: "border-[#00ffff]/40",
       hoverBorder: "hover:border-[#00ffff]",
@@ -70,13 +74,12 @@ export const teamMembers = [
       cardHeaderGlow: "from-cyan-600/10 via-cyan-900/5 to-transparent",
     },
     roleDescription:
-      "Support og problemløser. Feilsøker, rydder opp, og 'gjenoppliver' koden når uventede bugs oppstår (Blå detaljer).",
-    bio: "Hans Kristian er lagets redningsmann og dedikerte feilsøker. Med et skarpt analytisk hode identifiserer han rotårsaken til kryptiske feilmeldinger og bringer krasjede systemer tilbake til full drift på rekordtid.",
+      "Kvalitets- og feilsøkingsansvarlig. Identifiserer rotårsaker, rydder teknisk gjeld og 'gjenoppliver' koden når uventede bugs oppstår.",
+    bio: "Hans Kristian er lagets kvalitetsansvarlige og dedikerte problemløser. Med et skarpt analytisk hode identifiserer han rotårsaken til kryptiske feilmeldinger og bringer krasjede moduler tilbake til stabil drift på rekordtid.",
     styrker: [
+      "Kvalitetssikring (QA) og testmetodikk",
       "Eksepsjonell feilsøking og root-cause analyse",
       "Ryddig refaktorisering og teknisk gjeldsbekjempelse",
-      "Støttende lagspiller som alltid hjelper andre ut av blindveier",
-      "Analytisk tilnærming til AI-prompting og logiske feil",
     ],
     svakheter: [
       "Kan grave seg så dypt ned i et feilsøkingsmønster at klokken glemmes",
@@ -107,6 +110,8 @@ export const teamMembers = [
     name: "Kristian",
     perk: "Speed Cola",
     accentColor: "#00ff00",
+    image: "/team/kristian.png",
+    perkImage: "/perks/speed-cola.png",
     colorTheme: {
       border: "border-[#00ff00]/40",
       hoverBorder: "hover:border-[#00ff00]",
@@ -117,13 +122,12 @@ export const teamMembers = [
       cardHeaderGlow: "from-emerald-600/10 via-emerald-900/5 to-transparent",
     },
     roleDescription:
-      "Rask og smidig. Optimaliserer prosesser, kutter ned lastetid og leverer kode i høyt tempo (Grønne detaljer).",
-    bio: "Kristian er fartsfantomet som eliminerer flaskehalser. Han brenner for ytelse, smidige arbeidsflyter og lynrask leveranse, og sørger for at brukergrensesnitt responderer på millisekundet.",
+      "Frontend- og ytelsesansvarlig. Optimaliserer responstid, kutter lastetid og leverer moderne brukergrensesnitt i høyt tempo.",
+    bio: "Kristian har fagansvar for frontend og ytelse, og er fartsfantomet som eliminerer flaskehalser. Han brenner for smidige arbeidsflyter og Core Web Vitals, og sørger for at brukergrensesnittet responderer lynraskt på alle flater.",
     styrker: [
-      "Optimalisering av kode, spørringer og Core Web Vitals",
+      "Frontend-arkitektur og moderne UI/UX",
+      "Optimalisering av kode, ytelse og Core Web Vitals",
       "Smidig og rask prototyping av nye konsepter",
-      "Finner alltid den mest effektive ruten fra idé til fungerende funksjon",
-      "Aktiv utnyttelse av snarveier og AI-verktøy for rask implementering",
     ],
     svakheter: [
       "Kan bli utålmodig i lange, teoretiske møter uten kode på skjermen",
@@ -154,6 +158,8 @@ export const teamMembers = [
     name: "Mats",
     perk: "Double Tap",
     accentColor: "#ffaa00",
+    image: "/team/mats.jpg",
+    perkImage: "/perks/double-tap.png",
     colorTheme: {
       border: "border-[#ffaa00]/40",
       hoverBorder: "hover:border-[#ffaa00]",
@@ -164,13 +170,12 @@ export const teamMembers = [
       cardHeaderGlow: "from-amber-600/10 via-amber-900/5 to-transparent",
     },
     roleDescription:
-      "Høy output. Pumper ut funksjonalitet, dobler effektiviteten og sørger for maksimal verdi på kort tid (Gule/oransje detaljer).",
-    bio: "Mats representerer ren gjennomføringskraft og dobbel slagkraft. Med en unik evne til å produsere funksjonalitet i høyt volum og integrere forretningslogikk, sørger han for at kunden får maksimal verdi ut av hvert eneste sprint.",
+      "Fullstack- og produksjonsansvarlig. Pumper ut funksjonalitet, utnytter AI-akselerasjon og sørger for maksimal verdi for oppdragsgiver.",
+    bio: "Mats representerer ren gjennomføringskraft og dobbel slagkraft som fullstack-ressurs. Med en unik evne til å produsere funksjonalitet i høyt volum og integrere forretningslogikk, sørger han for at kunden får maksimal verdi ut av hvert eneste sprint.",
     styrker: [
+      "Fullstack-utvikling og forretningslogikk",
       "Høyt produksjonsvolum og leveringsevne",
-      "Effektiv omsetning av brukerhistorier til levende kode",
-      "Skarpt øye for forretningsverdi og sluttbrukerbehov",
-      "Prompt Engineering-spesialist som dobler egen og teamets produktivitet",
+      "Prompt Engineering-spesialist som dobler produktiviteten",
     ],
     svakheter: [
       "Kan finne på å kode tre alternative løsninger når én var nok",
@@ -214,47 +219,73 @@ export default function OmOssPage() {
         <div className="max-w-3xl space-y-4">
           <div className="inline-flex items-center gap-2 font-mono text-xs text-[#00ff9d] uppercase tracking-wider">
             <span className="h-1.5 w-1.5 rounded-full bg-[#00ff9d]"></span>
-            <span>{SLASH} Gruppe 10 {SLASH} IT 5. Semester UiA</span>
+            <span>{SLASH} Om oss</span>
           </div>
           <h1 className="text-4xl sm:text-5xl font-extrabold text-white tracking-tight">
             Om Perk-a-Code
           </h1>
           <p className="text-slate-300 text-lg leading-relaxed">
             Vi er fire IT-studenter ved Universitetet i Agder som har slått oss
-            sammen for å kombinere våre spesialiserte styrker. Med inspirasjon fra
-            de klassiske Perk-a-Cola-egenskapene dekker vi hele spekteret fra
-            ubrytelig arkitektur og lynrask optimalisering til feilsøking og massiv
-            produktivitet.
+            sammen for å kombinere våre spesialiserte styrker. Navnet vårt er
+            inspirert av Perk-a-Cola fra Call of Duty Zombies, der hver «perk» gir
+            en unik superkraft. Hos oss betyr det en etablert dynamikk med
+            krystallklare roller: én sikrer arkitekturen og stabiliteten, én
+            feilsøker og rydder opp, én optimaliserer ytelsen, og én pumper ut
+            funksjonalitet og verdi i høyt tempo.
           </p>
         </div>
 
-        {/* Perk Team Philosophy Banner */}
-        <div className="rounded-xl border border-[#1d2a3f] bg-[#0a1220]/70 p-6 sm:p-8 backdrop-blur-md">
-          <div className="flex flex-col md:flex-row items-start md:items-center justify-between gap-6">
-            <div className="space-y-2 max-w-2xl">
-              <h3 className="font-mono text-base font-bold uppercase tracking-wider text-[#00f0ff]">
-                {SLASH} Perk-Synergien: Hvorfor dette fungerer
-              </h3>
+        {/* Perk Team Philosophy Banner with all 4 Perk-a-Cola bottles */}
+        <div className="relative overflow-hidden rounded-2xl border border-[#1d2a3f] bg-[#0a1220]/80 p-6 sm:p-8 backdrop-blur-md">
+          <div className="flex flex-col lg:flex-row items-center justify-between gap-8">
+            <div className="space-y-3 max-w-xl text-center lg:text-left">
+              <div className="inline-flex items-center gap-2 font-mono text-xs text-[#00f0ff] uppercase tracking-wider">
+                <span className="h-1.5 w-1.5 rounded-full bg-[#00f0ff] animate-ping"></span>
+                <span>{SLASH} Perk-Synergien: Hvorfor dette fungerer</span>
+              </div>
+              <h2 className="text-2xl sm:text-3xl font-bold text-white tracking-tight">
+                Fire spesialiserte perks. Ett samkjørt team.
+              </h2>
               <p className="text-sm text-slate-300 leading-relaxed">
-                Ingen enkeltutvikler kan mestre alt alene. Ved å tydeliggjøre våre
-                respektive roller unngår vi overlapping og flaskehalser. Kasper
-                sikrer stabilitet, Hans Kristian løser floker, Kristian holder farten
-                oppe, og Mats sørger for at leveransen blir komplett i tide.
+                Ingen utvikler kan mestre alt alene. Ved å rendyrke våre roller
+                unngår vi overlapping og flaskehalser:{" "}
+                <strong className="text-white">Kasper</strong> leder teamet og
+                forankrer en robust arkitektur,{" "}
+                <strong className="text-white">Hans Kristian</strong>{" "}
+                kvalitetssikrer og feilsøker,{" "}
+                <strong className="text-white">Kristian</strong> sørger for
+                lynraske og intuitive brukergrensesnitt, mens{" "}
+                <strong className="text-white">Mats</strong> pumper ut
+                funksjonalitet med AI-akselerert gjennomføringskraft.
               </p>
             </div>
-            <div className="flex flex-wrap gap-2 text-xs font-mono">
-              <span className="rounded border border-[#ff0000]/50 bg-red-950/40 px-3 py-1.5 text-red-400">
-                #JUGGERNOG
-              </span>
-              <span className="rounded border border-[#00ffff]/50 bg-cyan-950/40 px-3 py-1.5 text-cyan-300">
-                #QUICK_REVIVE
-              </span>
-              <span className="rounded border border-[#00ff00]/50 bg-emerald-950/40 px-3 py-1.5 text-emerald-300">
-                #SPEED_COLA
-              </span>
-              <span className="rounded border border-[#ffaa00]/50 bg-amber-950/40 px-3 py-1.5 text-amber-300">
-                #DOUBLE_TAP
-              </span>
+
+            {/* Showcase med de 4 flaskene */}
+            <div className="grid grid-cols-4 gap-2 sm:gap-6 items-end justify-center p-3 sm:p-5 rounded-xl border border-[#152336] bg-[#060b14]/70">
+              {teamMembers.map((m) => (
+                <div key={m.id} className="group flex flex-col items-center gap-2 text-center">
+                  <div className="relative h-24 sm:h-32 w-8 sm:w-12 transition-all duration-300 group-hover:scale-110 group-hover:-translate-y-1">
+                    <Image
+                      src={m.perkImage}
+                      alt={m.perk}
+                      fill
+                      className="object-contain"
+                      style={{
+                        filter: `drop-shadow(0 0 10px ${m.accentColor}77)`,
+                      }}
+                    />
+                  </div>
+                  <span
+                    className="font-mono text-[10px] sm:text-xs font-bold uppercase tracking-wider"
+                    style={{ color: m.accentColor }}
+                  >
+                    {m.perk}
+                  </span>
+                  <span className="text-[10px] font-mono text-slate-400">
+                    {m.name}
+                  </span>
+                </div>
+              ))}
             </div>
           </div>
         </div>
@@ -272,128 +303,106 @@ export default function OmOssPage() {
               ></div>
 
               <div className="relative space-y-6">
-                {/* Header: Name, Perk badge & Role Description */}
-                <div className="flex flex-wrap items-start justify-between gap-4 border-b border-[#141f32] pb-5">
-                  <div>
-                    <div className="flex items-center gap-3">
-                      <h2 className="text-2xl sm:text-3xl font-extrabold text-white tracking-tight">
-                        {member.name}
-                      </h2>
-                      <span
-                        className="h-3 w-3 rounded-full"
-                        style={{
-                          backgroundColor: member.accentColor,
-                          boxShadow: `0 0 10px ${member.accentColor}`,
-                        }}
-                      ></span>
-                    </div>
-                    <p
-                      className="font-mono text-sm font-semibold tracking-wide mt-1"
-                      style={{ color: member.accentColor }}
+                {/* Header: Photo, Name, Perk badge & Role Description */}
+                <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-5 border-b border-[#141f32] pb-5">
+                  <div className="flex items-center gap-4">
+                    <div
+                      className="relative h-28 w-28 sm:h-36 sm:w-36 md:h-40 md:w-40 shrink-0 overflow-hidden rounded-2xl border-2 bg-[#060a12] shadow-xl transition-transform duration-300 hover:scale-105"
+                      style={{
+                        borderColor: member.accentColor,
+                        boxShadow: `0 0 20px ${member.accentColor}40`,
+                      }}
                     >
-                      Perk: {member.perk}
-                    </p>
+                      <Image
+                        src={member.image}
+                        alt={member.name}
+                        fill
+                        sizes="(max-width: 640px) 112px, 160px"
+                        className="object-cover object-center"
+                      />
+                    </div>
+                    <div>
+                      <div className="flex items-center gap-3">
+                        <h2 className="text-2xl sm:text-3xl font-extrabold text-white tracking-tight">
+                          {member.name}
+                        </h2>
+                        <span
+                          className="h-3 w-3 rounded-full"
+                          style={{
+                            backgroundColor: member.accentColor,
+                            boxShadow: `0 0 10px ${member.accentColor}`,
+                          }}
+                        ></span>
+                      </div>
+                      <p
+                        className="font-mono text-sm font-semibold tracking-wide mt-1"
+                        style={{ color: member.accentColor }}
+                      >
+                        Perk: {member.perk}
+                      </p>
+                    </div>
                   </div>
 
-                  <span
-                    className={`rounded-md px-3 py-1.5 font-mono text-xs font-bold uppercase tracking-wider border ${member.colorTheme.badgeBg}`}
-                  >
-                    {member.perk}
-                  </span>
+                  {/* Perk Bottle & Badge */}
+                  <div className="flex items-center sm:flex-col sm:items-end justify-between sm:justify-center gap-3 self-end sm:self-auto">
+                    <div className="relative h-24 sm:h-32 w-10 sm:w-12 transition-transform duration-300 hover:scale-110">
+                      <Image
+                        src={member.perkImage}
+                        alt={member.perk}
+                        fill
+                        className="object-contain"
+                        style={{
+                          filter: `drop-shadow(0 0 14px ${member.accentColor}99)`,
+                        }}
+                      />
+                    </div>
+                    <span
+                      className={`rounded-md px-3 py-1 font-mono text-xs font-bold uppercase tracking-wider border ${member.colorTheme.badgeBg}`}
+                    >
+                      {member.perk}
+                    </span>
+                  </div>
                 </div>
 
                 {/* Role Description Callout */}
-                <div className="rounded-lg bg-[#050912]/80 border-l-2 p-4" style={{ borderColor: member.accentColor }}>
-                  <p className="font-mono text-xs sm:text-sm text-slate-200 leading-relaxed">
+                <div className="rounded-lg bg-[#050912]/80 border-l-2 p-4 sm:p-5" style={{ borderColor: member.accentColor }}>
+                  <p className="font-mono text-sm sm:text-base text-slate-200 leading-relaxed">
                     {member.roleDescription}
                   </p>
                 </div>
 
-                {/* Bio */}
-                <p className="text-sm text-slate-300 leading-relaxed">
-                  {member.bio}
-                </p>
-
                 {/* Styrker & Svakheter (2 Columns) */}
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-5 pt-2">
                   {/* Styrker */}
-                  <div className="space-y-2.5 rounded-lg bg-[#0a1220]/60 p-4 border border-[#141f30]">
-                    <h4 className="font-mono text-xs font-bold uppercase tracking-wider text-[#00ff9d] flex items-center gap-1.5">
-                      <span>✓</span> Styrker
+                  <div className="space-y-3 rounded-xl bg-[#0a1220]/70 p-5 sm:p-6 border border-[#141f30]">
+                    <h4 className="font-mono text-sm sm:text-base font-bold uppercase tracking-wider text-[#00ff9d] flex items-center gap-2">
+                      <span className="text-base">✓</span>
+                      <span>Styrker</span>
                     </h4>
-                    <ul className="space-y-1.5 text-xs text-slate-300">
+                    <ul className="space-y-2.5 text-sm sm:text-base text-slate-200">
                       {member.styrker.map((styrke, idx) => (
-                        <li key={idx} className="flex items-start gap-1.5">
+                        <li key={idx} className="flex items-start gap-2.5">
                           <span className="text-[#00ff9d] font-mono mt-0.5">•</span>
-                          <span>{styrke}</span>
+                          <span className="leading-snug">{styrke}</span>
                         </li>
                       ))}
                     </ul>
                   </div>
 
                   {/* Svakheter */}
-                  <div className="space-y-2.5 rounded-lg bg-[#0a1220]/60 p-4 border border-[#141f30]">
-                    <h4 className="font-mono text-xs font-bold uppercase tracking-wider text-slate-400 flex items-center gap-1.5">
-                      <span>⚡</span> Svakheter / Humor
+                  <div className="space-y-3 rounded-xl bg-[#0a1220]/70 p-5 sm:p-6 border border-[#141f30]">
+                    <h4 className="font-mono text-sm sm:text-base font-bold uppercase tracking-wider text-slate-300 flex items-center gap-2">
+                      <span className="text-base">⚡</span>
+                      <span>Svakheter / Humor</span>
                     </h4>
-                    <ul className="space-y-1.5 text-xs text-slate-400">
+                    <ul className="space-y-2.5 text-sm sm:text-base text-slate-300">
                       {member.svakheter.map((svakhet, idx) => (
-                        <li key={idx} className="flex items-start gap-1.5">
+                        <li key={idx} className="flex items-start gap-2.5">
                           <span className="text-slate-500 font-mono mt-0.5">•</span>
-                          <span>{svakhet}</span>
+                          <span className="leading-snug">{svakhet}</span>
                         </li>
                       ))}
                     </ul>
-                  </div>
-                </div>
-
-                {/* Ambisjoner & Verdier (2 Columns) */}
-                <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
-                  {/* Ambisjoner */}
-                  <div className="space-y-2.5 rounded-lg bg-[#0a1220]/60 p-4 border border-[#141f30]">
-                    <h4 className="font-mono text-xs font-bold uppercase tracking-wider text-[#00f0ff] flex items-center gap-1.5">
-                      <span>🎯</span> Ambisjoner (2027)
-                    </h4>
-                    <ul className="space-y-1.5 text-xs text-slate-300">
-                      {member.ambisjoner.map((ambisjon, idx) => (
-                        <li key={idx} className="flex items-start gap-1.5">
-                          <span className="text-[#00f0ff] font-mono mt-0.5">&gt;</span>
-                          <span>{ambisjon}</span>
-                        </li>
-                      ))}
-                    </ul>
-                  </div>
-
-                  {/* Verdier */}
-                  <div className="space-y-2.5 rounded-lg bg-[#0a1220]/60 p-4 border border-[#141f30]">
-                    <h4 className="font-mono text-xs font-bold uppercase tracking-wider text-slate-300 flex items-center gap-1.5">
-                      <span>💎</span> Kjerneverdier
-                    </h4>
-                    <ul className="space-y-1.5 text-xs text-slate-300">
-                      {member.verdier.map((verdi, idx) => (
-                        <li key={idx} className="flex items-start gap-1.5">
-                          <span className="text-slate-400 font-mono mt-0.5">•</span>
-                          <span>{verdi}</span>
-                        </li>
-                      ))}
-                    </ul>
-                  </div>
-                </div>
-
-                {/* Tech Stack Badges */}
-                <div className="pt-3 border-t border-[#141f30] space-y-2">
-                  <span className="font-mono text-[11px] uppercase tracking-wider text-slate-400">
-                    Fokusområder & Teknologier:
-                  </span>
-                  <div className="flex flex-wrap gap-1.5">
-                    {member.teknologier.map((tech) => (
-                      <span
-                        key={tech}
-                        className={`rounded px-2.5 py-0.5 font-mono text-[11px] border ${member.colorTheme.tagBg}`}
-                      >
-                        {tech}
-                      </span>
-                    ))}
                   </div>
                 </div>
               </div>

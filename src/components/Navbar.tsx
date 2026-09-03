@@ -17,27 +17,25 @@ export default function Navbar() {
 
   return (
     <header className="sticky top-0 z-50 w-full border-b border-[#1a2333] bg-[#070b12]/90 backdrop-blur-md">
-      <div className="mx-auto flex max-w-7xl items-center justify-between px-4 sm:px-6 lg:px-8 h-20">
+      <div className="mx-auto flex max-w-7xl items-center justify-between px-4 sm:px-6 lg:px-8 h-28 sm:h-32">
         {/* Brand / Logo */}
         <Link
           href="/"
-          className="group flex items-center gap-3 transition-opacity hover:opacity-90"
+          className="group flex items-center gap-0.5 sm:gap-1 transition-opacity hover:opacity-95"
         >
-          <div className="relative flex items-center justify-center overflow-hidden rounded-md border border-[#1a2333] bg-[#0c1322] p-1 shadow-[0_0_15px_rgba(0,240,255,0.15)] group-hover:border-[#00f0ff]/50 group-hover:shadow-[0_0_20px_rgba(0,240,255,0.3)] transition-all duration-300">
-            <Image
-              src="/logo.png"
-              alt="Perk-a-Code Logo"
-              width={140}
-              height={76}
-              className="h-10 w-auto object-contain transition-transform duration-300 group-hover:scale-105"
-              priority
-            />
-          </div>
-          <div className="hidden sm:flex flex-col">
-            <span className="font-mono text-sm font-bold tracking-wider text-white group-hover:text-[#00f0ff] transition-colors">
+          <Image
+            src="/logo.png"
+            alt="Perk-a-Code Logo"
+            width={240}
+            height={296}
+            className="h-20 sm:h-24 md:h-28 w-auto object-contain transition-all duration-300 drop-shadow-[0_0_15px_rgba(0,240,255,0.35)] group-hover:scale-105 group-hover:drop-shadow-[0_0_26px_rgba(0,255,157,0.75)]"
+            priority
+          />
+          <div className="hidden sm:flex flex-col justify-center -ml-1 sm:-ml-1.5">
+            <span className="font-mono text-xl sm:text-2xl font-extrabold tracking-wider text-white group-hover:text-[#00f0ff] transition-colors leading-tight">
               PERK-A-CODE
             </span>
-            <span className="font-mono text-[10px] tracking-widest text-[#00ff9d]">
+            <span className="font-mono text-xs sm:text-sm tracking-widest text-[#00ff9d]">
               GRUPPE 10 // UiA IS-310
             </span>
           </div>
@@ -66,16 +64,6 @@ export default function Navbar() {
               </Link>
             );
           })}
-
-          <div className="ml-4 pl-4 border-l border-[#1a2333] flex items-center gap-2">
-            <span className="relative flex h-2.5 w-2.5">
-              <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-[#00ff9d] opacity-75"></span>
-              <span className="relative inline-flex rounded-full h-2.5 w-2.5 bg-[#00ff9d]"></span>
-            </span>
-            <span className="font-mono text-xs text-slate-400">
-              VÅR 2027 KANDIDATER
-            </span>
-          </div>
         </nav>
 
         {/* Mobile Hamburger Button */}

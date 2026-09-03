@@ -11,8 +11,9 @@ export default function Home() {
       accentBorder: "border-[#ff0000]/30 hover:border-[#ff0000]",
       hoverShadow: "hover:shadow-[0_0_30px_#ff0000]",
       badgeBg: "bg-red-950/60 text-red-400 border-red-500/40",
-      tagline: "Den robuste ryggraden",
-      shortDesc: "Tåler støyten, håndterer komplekse strukturer og sikrer stabilitet.",
+      tagline: "Teamleder // Den robuste ryggraden",
+      shortDesc: "Teamleder. Tåler støyten, håndterer komplekse strukturer og sikrer stabilitet og fremdrift.",
+      image: "/team/kasper.png",
     },
     {
       name: "Hans Kristian",
@@ -22,8 +23,9 @@ export default function Home() {
       accentBorder: "border-[#00ffff]/30 hover:border-[#00ffff]",
       hoverShadow: "hover:shadow-[0_0_30px_#00ffff]",
       badgeBg: "bg-cyan-950/60 text-cyan-300 border-cyan-400/40",
-      tagline: "Support og problemløser",
-      shortDesc: "Feilsøker, rydder opp og gjenoppliver koden når uventede bugs inntreffer.",
+      tagline: "Kvalitetsansvarlig // Support og problemløser",
+      shortDesc: "Kvalitets- og feilsøkingsansvarlig. Identifiserer rotårsaker, rydder teknisk gjeld og gjenoppliver krasjede moduler.",
+      image: "/team/hans-kristian.jpg",
     },
     {
       name: "Kristian",
@@ -33,8 +35,9 @@ export default function Home() {
       accentBorder: "border-[#00ff00]/30 hover:border-[#00ff00]",
       hoverShadow: "hover:shadow-[0_0_30px_#00ff00]",
       badgeBg: "bg-emerald-950/60 text-emerald-300 border-emerald-400/40",
-      tagline: "Rask og smidig",
-      shortDesc: "Optimaliserer prosesser, kutter lastetid og leverer kode i høyt tempo.",
+      tagline: "Frontend-ansvarlig // Rask og smidig",
+      shortDesc: "Frontend- og ytelsesansvarlig. Optimaliserer responstid, kutter lastetid og leverer moderne grensesnitt i høyt tempo.",
+      image: "/team/kristian.png",
     },
     {
       name: "Mats",
@@ -44,8 +47,9 @@ export default function Home() {
       accentBorder: "border-[#ffaa00]/30 hover:border-[#ffaa00]",
       hoverShadow: "hover:shadow-[0_0_30px_#ffaa00]",
       badgeBg: "bg-amber-950/60 text-amber-300 border-amber-400/40",
-      tagline: "Høy output",
-      shortDesc: "Pumper ut funksjonalitet, dobler effektiviteten og maksimerer verdi.",
+      tagline: "Fullstack-utvikler // Høy produksjon og AI",
+      shortDesc: "Fullstack- og produksjonsansvarlig. Pumper ut funksjonalitet, utnytter AI-akselerasjon og maksimerer verdi.",
+      image: "/team/mats.jpg",
     },
   ];
 
@@ -60,8 +64,7 @@ export default function Home() {
         {/* 1. HERO SECTION */}
         <section className="relative flex flex-col-reverse lg:flex-row items-center justify-between gap-12 pt-6">
           <div className="flex-1 space-y-6 text-center lg:text-left">
-            <div className="inline-flex items-center gap-2 rounded-full border border-[#00f0ff]/30 bg-[#0c1626]/80 px-4 py-1.5 text-xs font-mono text-[#00f0ff] shadow-[0_0_15px_rgba(0,240,255,0.2)]">
-              <span className="h-2 w-2 rounded-full bg-[#00ff9d] animate-ping"></span>
+            <div className="inline-flex items-center rounded-full border border-[#00f0ff]/30 bg-[#0c1626]/80 px-4 py-1.5 text-xs font-mono text-[#00f0ff] shadow-[0_0_15px_rgba(0,240,255,0.2)]">
               <span>{"IS-310 GRUPPE 10 // UNIVERSITETET I AGDER"}</span>
             </div>
 
@@ -101,61 +104,26 @@ export default function Home() {
                 href="#kontakt"
                 className="inline-flex items-center gap-2 rounded-md border border-transparent px-4 py-3 font-mono text-sm text-slate-400 hover:text-white transition-colors"
               >
-                <span>{"Hurtigkontakt ↓"}</span>
+                <span>{"Kontakt oss ↓"}</span>
               </a>
             </div>
 
-            {/* Quick terminal stats */}
-            <div className="grid grid-cols-3 gap-3 pt-6 border-t border-[#1a2333]/80 font-mono text-xs text-slate-400">
-              <div className="p-2.5 rounded bg-[#090e18] border border-[#141d2d]">
-                <div className="text-[#00ff9d] font-bold text-sm">4 UTVIKLERE</div>
-                <div>Spesialiserte Perks</div>
-              </div>
-              <div className="p-2.5 rounded bg-[#090e18] border border-[#141d2d]">
-                <div className="text-[#00f0ff] font-bold text-sm">5. SEMESTER</div>
-                <div>UiA Kristiansand</div>
-              </div>
-              <div className="p-2.5 rounded bg-[#090e18] border border-[#141d2d]">
-                <div className="text-white font-bold text-sm">VÅR 2027</div>
-                <div>Bacheloroppgave</div>
-              </div>
-            </div>
           </div>
 
           {/* Hero Logo Graphic */}
-          <div className="flex-1 flex justify-center items-center w-full max-w-lg">
-            <div className="relative group w-full">
-              {/* Glowing backdrops */}
-              <div className="absolute -inset-1 rounded-2xl bg-gradient-to-r from-[#00f0ff] to-[#00ff9d] opacity-20 blur-xl transition-all duration-500 group-hover:opacity-40 group-hover:blur-2xl"></div>
+          <div className="flex-1 flex justify-center items-center w-full">
+            <div className="relative group flex items-center justify-center">
+              {/* Diskré neon-glød bak logoen */}
+              <div className="absolute -inset-6 rounded-full bg-gradient-to-r from-[#00f0ff] via-[#00ff9d] to-[#00f0ff] opacity-15 blur-3xl transition-all duration-500 group-hover:opacity-35 group-hover:blur-3xl pointer-events-none"></div>
 
-              <div className="relative overflow-hidden rounded-2xl border border-[#1f2e47] bg-[#090e1a]/90 p-6 sm:p-8 backdrop-blur-xl shadow-2xl">
-                <div className="flex items-center justify-between border-b border-[#1a2638] pb-4 mb-6">
-                  <div className="flex items-center gap-2">
-                    <div className="h-3 w-3 rounded-full bg-red-500/80"></div>
-                    <div className="h-3 w-3 rounded-full bg-yellow-500/80"></div>
-                    <div className="h-3 w-3 rounded-full bg-green-500/80"></div>
-                  </div>
-                  <span className="font-mono text-[11px] text-[#00f0ff] tracking-wider">
-                    PERK_A_CODE_CORE.ENV
-                  </span>
-                </div>
-
-                <div className="relative aspect-[16/9] w-full flex items-center justify-center p-4 bg-[#050810]/70 rounded-lg border border-[#141e30]">
-                  <Image
-                    src="/logo.png"
-                    alt="Perk-a-Code Bachelor Group Logo"
-                    width={500}
-                    height={273}
-                    priority
-                    className="max-h-full w-auto object-contain drop-shadow-[0_0_25px_rgba(0,255,157,0.3)] transition-transform duration-500 group-hover:scale-105"
-                  />
-                </div>
-
-                <div className="mt-5 flex items-center justify-between text-xs font-mono text-slate-400">
-                  <span className="text-[#00ff9d]">&gt; READY_FOR_DEPLOYMENT</span>
-                  <span>IS-310 PRAKSIS</span>
-                </div>
-              </div>
+              <Image
+                src="/logo.png"
+                alt="Perk-a-Code Bachelor Group Logo"
+                width={480}
+                height={592}
+                priority
+                className="relative z-10 max-h-80 sm:max-h-96 lg:max-h-[28rem] w-auto object-contain transition-transform duration-500 group-hover:scale-105 drop-shadow-[0_0_30px_rgba(0,255,157,0.3)] group-hover:drop-shadow-[0_0_45px_rgba(0,240,255,0.6)]"
+              />
             </div>
           </div>
         </section>
@@ -172,8 +140,12 @@ export default function Home() {
                   {"// Pågående Praksisprosjekt: Kristiansand Kommune"}
                 </h2>
               </div>
-              <span className="font-mono text-xs rounded bg-[#0f1d30] px-3 py-1 text-slate-300 border border-[#1c3352]">
-                STATUS: AKTIVT PRAKSISARBEID
+              <span className="inline-flex items-center gap-2 font-mono text-xs rounded bg-[#0f1d30] px-3 py-1 text-slate-200 border border-[#1c3352] shadow-[0_0_10px_rgba(0,255,157,0.1)]">
+                <span className="relative flex h-2 w-2">
+                  <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-[#00ff9d] opacity-75"></span>
+                  <span className="relative inline-flex rounded-full h-2 w-2 bg-[#00ff9d]"></span>
+                </span>
+                <span>STATUS: AKTIVT PRAKSISARBEID</span>
               </span>
             </div>
 
@@ -191,7 +163,7 @@ export default function Home() {
             {/* Links and tech tags */}
             <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4 pt-2">
               <div className="flex flex-wrap items-center gap-3 font-mono text-xs">
-                <span className="text-slate-400">Relevante etater:</span>
+                <span className="text-slate-400">Les mer her:</span>
                 <a
                   href="https://www.kristiansand.kommune.no/"
                   target="_blank"
@@ -264,8 +236,8 @@ export default function Home() {
               Bachelor-søk: Klar for krevende oppgaver
             </h2>
             <p className="mt-3 text-slate-300 text-base sm:text-lg leading-relaxed">
-              Våren 2027 skal Perk-a-Code levere vår avsluttende bacheloroppgave.
-              Vi ser etter ambisiøse oppdragsgivere – enten i privat næringsliv,
+              Våren 2027 skal vi levere vår avsluttende bacheloroppgave. Vi ser
+              etter ambisiøse oppdragsgivere – enten i privat næringsliv,
               oppstartsbedrifter eller offentlig sektor – med en reell, kompleks
               problemstilling som krever mer enn en standard hyllevare.
             </p>
@@ -286,8 +258,10 @@ export default function Home() {
                   <span className="text-[#00ff9d] font-mono mt-0.5">•</span>
                   <span>
                     <strong className="text-white">Synergi og faste roller:</strong>{" "}
-                    Vi har en etablert dynamikk inspirert av klassiske gaming-perks
-                    – fra robust systemarkitektur til lynrask koding og feilsøking.
+                    Gruppenavnet er inspirert av Perk-a-Cola fra Call of Duty
+                    Zombies, der hver «perk» gir en unik superkraft. Hos oss
+                    betyr det klare roller: én sikrer arkitekturen, én feilsøker,
+                    én optimaliserer ytelsen og én pumper ut funksjonalitet.
                   </span>
                 </li>
                 <li className="flex items-start gap-2.5">
@@ -389,6 +363,21 @@ export default function Home() {
                 ></div>
 
                 <div className="space-y-4">
+                  {/* Medlemsprofilbilde */}
+                  <div className="relative aspect-square w-full overflow-hidden rounded-lg border border-[#162234] bg-[#070b14] transition-all duration-300 group-hover:border-[#25354e]">
+                    <Image
+                      src={member.image}
+                      alt={member.name}
+                      fill
+                      sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 25vw"
+                      className="object-cover object-center transition-transform duration-500 group-hover:scale-105"
+                    />
+                    <div
+                      className="absolute inset-0 opacity-0 group-hover:opacity-15 transition-opacity duration-300 pointer-events-none"
+                      style={{ backgroundColor: member.hex }}
+                    ></div>
+                  </div>
+
                   {/* Perk badge */}
                   <div className="flex items-center justify-between">
                     <span
@@ -448,7 +437,7 @@ export default function Home() {
               </h2>
 
               <p className="text-slate-300 text-base sm:text-lg leading-relaxed">
-                Har din bedrift eller etat en utfordring som egner seg for et
+                Har din bedrift en utfordring som egner seg for et
                 ambisiøst bachelorprosjekt våren 2027, eller ønsker dere å høre
                 mer om hvordan vi jobber med AI, web og datadrevet digitalisering?
                 Ta direkte kontakt med oss!
@@ -494,11 +483,6 @@ export default function Home() {
                   </svg>
                   <span>94 18 56 87</span>
                 </a>
-              </div>
-
-              <div className="pt-2 text-xs font-mono text-slate-400 flex items-center gap-2">
-                <span className="text-[#00ff9d]">•</span>
-                <span>Rask responstid: Svarer vanligvis innen få timer</span>
               </div>
             </div>
           </div>
