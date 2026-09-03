@@ -16,6 +16,10 @@ export const teamMembers = [
     accentColor: "#ff0000",
     image: "/team/kasper.png",
     perkImage: "/perks/juggernog.png",
+    socials: {
+      github: "https://github.com/kJ4SPer",
+      linkedin: "https://www.linkedin.com/in/kj4sper/",
+    },
     colorTheme: {
       border: "border-[#ff0000]/40",
       hoverBorder: "hover:border-[#ff0000]",
@@ -64,6 +68,10 @@ export const teamMembers = [
     accentColor: "#00ffff",
     image: "/team/hans-kristian.jpg",
     perkImage: "/perks/quick-revive.png",
+    socials: {
+      github: "https://github.com/HKwastaken",
+      linkedin: "https://www.linkedin.com/in/hans-kristian-steffenstorpet-619610403/",
+    },
     colorTheme: {
       border: "border-[#00ffff]/40",
       hoverBorder: "hover:border-[#00ffff]",
@@ -112,6 +120,10 @@ export const teamMembers = [
     accentColor: "#00ff00",
     image: "/team/kristian.png",
     perkImage: "/perks/speed-cola.png",
+    socials: {
+      github: "https://github.com/kristianS7",
+      linkedin: "https://www.linkedin.com/in/kristian-stenersen/",
+    },
     colorTheme: {
       border: "border-[#00ff00]/40",
       hoverBorder: "hover:border-[#00ff00]",
@@ -160,6 +172,10 @@ export const teamMembers = [
     accentColor: "#ffaa00",
     image: "/team/mats.jpg",
     perkImage: "/perks/double-tap.png",
+    socials: {
+      github: "https://github.com/FalckM",
+      linkedin: "https://www.linkedin.com/in/mats-lie-137b14205/",
+    },
     colorTheme: {
       border: "border-[#ffaa00]/40",
       hoverBorder: "hover:border-[#ffaa00]",
@@ -340,6 +356,50 @@ export default function OmOssPage() {
                       >
                         Perk: {member.perk}
                       </p>
+
+                      {/* Socials */}
+                      {member.socials && (
+                        <div className="flex flex-wrap items-center gap-2 mt-3">
+                          {member.socials.github && (
+                            <a
+                              href={member.socials.github}
+                              target="_blank"
+                              rel="noopener noreferrer"
+                              className="inline-flex items-center gap-1.5 rounded-md border border-[#1b283d] bg-[#09111e]/90 px-2.5 py-1 text-xs font-mono text-slate-300 hover:text-white hover:border-[#00ff9d]/50 hover:bg-[#0f1b2e] hover:shadow-[0_0_12px_rgba(0,255,157,0.2)] transition-all"
+                              aria-label={`${member.name} GitHub`}
+                            >
+                              <svg
+                                className="h-3.5 w-3.5 fill-current"
+                                viewBox="0 0 24 24"
+                              >
+                                <path
+                                  fillRule="evenodd"
+                                  clipRule="evenodd"
+                                  d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.53 1.032 1.53 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"
+                                />
+                              </svg>
+                              <span>GitHub</span>
+                            </a>
+                          )}
+                          {member.socials.linkedin && (
+                            <a
+                              href={member.socials.linkedin}
+                              target="_blank"
+                              rel="noopener noreferrer"
+                              className="inline-flex items-center gap-1.5 rounded-md border border-[#1b283d] bg-[#09111e]/90 px-2.5 py-1 text-xs font-mono text-slate-300 hover:text-white hover:border-[#00f0ff]/50 hover:bg-[#0f1b2e] hover:shadow-[0_0_12px_rgba(0,240,255,0.2)] transition-all"
+                              aria-label={`${member.name} LinkedIn`}
+                            >
+                              <svg
+                                className="h-3.5 w-3.5 fill-current text-[#00f0ff]"
+                                viewBox="0 0 24 24"
+                              >
+                                <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" />
+                              </svg>
+                              <span>LinkedIn</span>
+                            </a>
+                          )}
+                        </div>
+                      )}
                     </div>
                   </div>
 
@@ -393,7 +453,7 @@ export default function OmOssPage() {
                   <div className="space-y-3 rounded-xl bg-[#0a1220]/70 p-5 sm:p-6 border border-[#141f30]">
                     <h4 className="font-mono text-sm sm:text-base font-bold uppercase tracking-wider text-slate-300 flex items-center gap-2">
                       <span className="text-base">⚡</span>
-                      <span>Svakheter / Humor</span>
+                      <span>Svakheter</span>
                     </h4>
                     <ul className="space-y-2.5 text-sm sm:text-base text-slate-300">
                       {member.svakheter.map((svakhet, idx) => (
