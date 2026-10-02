@@ -2,6 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import CopyButton from "@/components/CopyButton";
 import TechMarquee from "@/components/TechMarquee";
+import PromoVideo from "@/components/PromoVideo";
 
 export default function Home() {
   const miniTeam = [
@@ -93,6 +94,12 @@ export default function Home() {
             </p>
 
             <div className="flex flex-wrap items-center justify-center lg:justify-start gap-4 pt-4">
+              <a
+                href="#promovideo"
+                className="inline-flex items-center gap-2 rounded-md bg-[#00f0ff] px-6 py-3 font-mono text-sm font-bold text-[#070b12] transition-all duration-300 hover:bg-[#52f5ff] hover:shadow-[0_0_25px_rgba(0,240,255,0.6)] active:scale-95"
+              >
+                <span>▶ Se promovideo</span>
+              </a>
               <Link
                 href="/prosjekter"
                 className="inline-flex items-center gap-2 rounded-md bg-[#00ff9d] px-6 py-3 font-mono text-sm font-bold text-[#070b12] transition-all duration-300 hover:bg-[#2effb1] hover:shadow-[0_0_25px_rgba(0,255,157,0.5)] active:scale-95"
@@ -134,7 +141,10 @@ export default function Home() {
           </div>
         </section>
 
-        {/* 2. RULLENDE TEKNOLOGIKARUSELL MED LOGOER */}
+        {/* 2. REFRESH IT 2026 // PROMOVIDEO */}
+        <PromoVideo />
+
+        {/* 3. RULLENDE TEKNOLOGIKARUSELL MED LOGOER */}
         <TechMarquee />
 
         {/* 3. PRAKSIS-BOKS */}
