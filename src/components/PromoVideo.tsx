@@ -39,7 +39,7 @@ export default function PromoVideo() {
 
           <div className="flex flex-wrap items-center gap-2 font-mono text-xs">
             <span className="rounded bg-[#0e1c2e] border border-[#1b3452] px-2.5 py-1 text-[#00ff9d] shadow-[0_0_8px_rgba(0,255,157,0.2)]">
-              ⏱ VARIGHET: 2–3 MIN
+              ⏱ VARIGHET: 1:53 MIN
             </span>
           </div>
         </div>
@@ -101,7 +101,7 @@ export default function PromoVideo() {
                 </button>
 
                 <div className="inline-flex items-center gap-2 rounded-full bg-[#0a1524] px-4 py-1 border border-[#00f0ff]/30 text-xs font-mono text-[#00f0ff] mb-3">
-                  <span>KLIKK FOR Å SPILLE AV PITCH</span>
+                  <span>KLIKK FOR Å SPILLE AV VIDEO</span>
                 </div>
 
                 <h3 className="text-lg sm:text-xl font-bold text-white mb-2">
