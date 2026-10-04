@@ -9,10 +9,11 @@ export default function PromoVideo() {
   const videoRef = useRef<HTMLVideoElement | null>(null);
 
   const handleStartPlay = () => {
+    setVideoError(false);
     setIsPlaying(true);
     if (videoRef.current) {
-      videoRef.current.play().catch(() => {
-        // Om nettleseren nekter autoplay eller filen ikke finnes ennå
+      videoRef.current.play().catch((err) => {
+        console.error("Video play error:", err);
         setVideoError(true);
       });
     }
@@ -51,11 +52,13 @@ export default function PromoVideo() {
           <video
             ref={videoRef}
             controls={isPlaying}
+            playsInline
             preload="metadata"
             className={`w-full h-full object-cover transition-opacity duration-500 ${
-              isPlaying && !videoError ? "opacity-100 block" : "opacity-0 hidden"
+              isPlaying && !videoError ? "opacity-100" : "opacity-0"
             }`}
             onError={() => setVideoError(true)}
+            onEnded={() => setIsPlaying(false)}
           >
             <source src="/promo.mp4" type="video/mp4" />
             Nettleseren din støtter ikke videoavspilling.
